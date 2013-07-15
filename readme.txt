@@ -8,7 +8,7 @@ Stable tag: 0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Genere dinámica y automáticamente un mapa de sitio para móviles de Google (archivo sitemap-mobile.xml). No requiere ningún tipo de configuración.
+Genere dinámica y automáticamente un mapa de sitio para móviles de Google (archivo sitemap-mobile.xml). No requiere ningún tipo de configuración..
 
 == Description ==
 
