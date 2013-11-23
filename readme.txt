@@ -19,7 +19,7 @@ Genera dinámicamente el archivo `sitemap-mobile.xml`, un mapa de sitio para mó
 * Informa automáticamente a Google y a Bing cada vez que publiquemos una nueva entrada o página. 
 
 = Origen =
-**Google Mobile Sitemap Feed With Multisite Support** ha sido programado a partir de los plugins [*Google News Sitemap Feed With Multisite Support*](http://wordpress.org/plugins/google-news-sitemap-feed-with-multisite-support/) de [Tim Brandon](http://profiles.wordpress.org/users/timbrd/) y [Google XML Sitemap for Mobile*](http://wordpress.org/plugins/google-mobile-sitemap/) de [Amit Agarwal](http://profiles.wordpress.org/labnol/), que aún siendo magníficos plugins no ofrecían todas las características que necesitábamos. Aún así su trabajo ha sido completamente imprescindible para la realización de este plugin.
+**Google Mobile Sitemap Feed With Multisite Support** ha sido programado a partir de los plugins [*Google News Sitemap Feed With Multisite Support*](http://wordpress.org/plugins/google-news-sitemap-feed-with-multisite-support/) de [Tim Brandon](http://profiles.wordpress.org/users/timbrd/) y [*Google XML Sitemap for Mobile*](http://wordpress.org/plugins/google-mobile-sitemap/) de [Amit Agarwal](http://profiles.wordpress.org/labnol/), que aún siendo magníficos plugins no ofrecían todas las características que necesitábamos. Aún así su trabajo ha sido completamente imprescindible para la realización de este plugin.
 
 = Complementos =
 Se recomienda el uso de **Google Mobile Sitemap Feed With Multisite Support** junto a [**Google Image Sitemap Feed With Multisite Support**](http://wordpress.org/plugins/google-image-sitemap-feed-with-multisite-support/) que genera el archivo `sitemap-image.xml`, y [**Google Video Sitemap Feed With Multisite Support**](http://wordpress.org/plugins/google-video-sitemap-feed-with-multisite-support/) que genera el archivo `sitemap-mobile.xml`.
@@ -33,6 +33,7 @@ En nuestro sitio web oficial puede obtener más información sobre [**Google Mob
 
 = Comentarios =
 No olvides dejarnos tu comentario en:
+
 * [Art Project Group](http://www.artprojectgroup.es/plugins-para-wordpress/google-mobile-sitemap-feed-with-multisite-support).
 * [Art Project Group](https://www.facebook.com/artprojectgroup) en Facebook.
 * [@artprojectgroup](https://twitter.com/artprojectgroup) en Twitter.
@@ -44,7 +45,7 @@ Recuerda que puedes encontrar más plugin para WordPress en [Art Project Group](
 == Installation ==
 1. Subir la carpeta `google-mobile-sitemap-feed-with-multisite-support` al directorio `/wp-content/plugins/`, o subir el archivo ZIP completo vía *Plugins -> Añadir nuevo -> Subir* en el Panel de Administración de tu instalación de WordPress.
 2. Activar el plugin a través del menú *Plugins* en el Panel de Administración de WordPress.
-3. Listo, ahora ya puedes disfrutar de él, y si te gusta y te resulta útil, hacer una (*donación*) [https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=55FHSWUMLJKK2].
+3. Listo, ahora ya puedes disfrutar de él, y si te gusta y te resulta útil, hacer una [*donación*](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=55FHSWUMLJKK2).
 
 == Frequently Asked Questions ==
 
