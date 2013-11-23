@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Google Mobile Sitemap Feed With Multisite Support v0.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2013-11-23 01:47:01+0000\n"
+"PO-Revision-Date: 2013-11-23 02:14:19+0000\n"
 "Last-Translator: admin <info@artprojectgroup.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -63,7 +63,7 @@ msgstr ""
 #: xml-sitemap.php:0
 #@ xml_mobile_sitemap
 msgid "Dynamically generates a Google Mobile Sitemap and automatically submit updates to Google and Bing. No settings required. Compatible with WordPress Multisite installations. Created from <a href=\"http://profiles.wordpress.org/users/timbrd/\" target=\"_blank\">Tim Brandon</a> <a href=\"http://wordpress.org/plugins/google-news-sitemap-feed-with-multisite-support/\" target=\"_blank\"><strong>Google News Sitemap Feed With Multisite Support</strong></a> and <a href=\"http://profiles.wordpress.org/labnol/\" target=\"_blank\">Amit Agarwal</a> <a href=\"http://wordpress.org/plugins/google-mobile-sitemap/\" target=\"_blank\"><strong>Google XML Sitemap for Mobile</strong></a> plugins."
-msgstr "Genera dinámicamente un mapa de sitio de vídeos para Google, informando automáticamente de actualizaciones a Google y Bing. No requiere configuración. Compatible con instalaciones de WordPress multisitio. Creado a partir del plugin de <a href=\"http://profiles.wordpress.org/users/timbrd/\" target=\"_blank\">Tim Brandon</a> <a href=\"http://wordpress.org/plugins/google-news-sitemap-feed-with-multisite-support/\" target=\"_blank\"><strong>Google News Sitemap Feed With Multisite Support</strong></a> y el plugin de <a href=\"http://profiles.wordpress.org/labnol/\" target=\"_blank\">Amit Agarwal</a> <a href=\"http://wordpress.org/plugins/google-mobile-sitemap/\" target=\"_blank\"><strong>Google XML Sitemap for Mobile</strong></a>."
+msgstr "Genera dinámicamente un mapa de sitio de móviles para Google, informando automáticamente de actualizaciones a Google y Bing. No requiere configuración. Compatible con instalaciones de WordPress multisitio. Creado a partir del plugin de <a href=\"http://profiles.wordpress.org/users/timbrd/\" target=\"_blank\">Tim Brandon</a> <a href=\"http://wordpress.org/plugins/google-news-sitemap-feed-with-multisite-support/\" target=\"_blank\"><strong>Google News Sitemap Feed With Multisite Support</strong></a> y el plugin de <a href=\"http://profiles.wordpress.org/labnol/\" target=\"_blank\">Amit Agarwal</a> <a href=\"http://wordpress.org/plugins/google-mobile-sitemap/\" target=\"_blank\"><strong>Google XML Sitemap for Mobile</strong></a>."
 
 #. translators: plugin header field 'Version'
 #: xml-sitemap.php:0

@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: Google, Google Mobile, Google Mobile Sitemap, sitemap, sitemap-mobile.xml
 Requires at least: 2.6
 Tested up to: 3.7.1
-Stable tag: 0.2
+Stable tag: 0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -48,7 +48,6 @@ Recuerda que puedes encontrar más plugin para WordPress en [Art Project Group](
 3. Listo, ahora ya puedes disfrutar de él, y si te gusta y te resulta útil, hacer una [*donación*](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=55FHSWUMLJKK2).
 
 == Frequently Asked Questions ==
-
 = ¿Necesita configuración? =
 No, el plugin es totalmente autónomo.
 
@@ -59,19 +58,19 @@ Si, es completamente compatible.
 Si, se han descrito errores al utilizarlo conjuntamente con el plugin **Google XML Sitemaps**. Los errores están provocados por un orden erróneo de las reglas de redirección de WordPress, ya que **Google XML Sitemaps** interpreta todos los tipos de mapas de sitios posibles. En [¿Cómo arreglar la incompatibilidad de Google XML Sitemaps con nuestros plugins?](http://www.artprojectgroup.es/como-arreglar-la-incompatibilidad-de-google-xml-sitemaps-con-nuestros-plugins) encontrarás toda la información sobre esta incompatibilidad y la solución a la misma.
 
 == Screenshots ==
-
 1. Captura de pantalla de sitemap-mobile.xml.
 
 == Changelog ==
-
+= 0.3 =
+Reparación de errores menores. 
 = 0.2 =
-Versión inicial mejorada
-
+Versión inicial mejorada.
 = 0.1 =
-Versión inicial
+Versión inicial.
 
 == Upgrade Notice ==
-
+= 0.3 =
+Pequeños arreglos de código y traducción.
 = 0.2 =
 Pequeñas modificaciones y arreglos de código, inclusión de enlaces y actualización de los textos de información.
 
