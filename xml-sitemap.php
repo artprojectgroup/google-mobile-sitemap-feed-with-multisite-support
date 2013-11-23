@@ -7,7 +7,7 @@ Description: Dynamically generates a Google Mobile Sitemap and automatically sub
 Author: Art Project Group
 Author URI: http://www.artprojectgroup.es/
 
-Text Domain: xml_video_sitemap
+Text Domain: xml_mobile_sitemap
 Domain Path: /lang
 License: GPL2
 */
@@ -39,7 +39,7 @@ License: GPL2
  */
 
 //Carga el idioma
-load_plugin_textdomain( 'xml_video_sitemap', null, dirname( plugin_basename( __FILE__ ) ) . '/lang' );
+load_plugin_textdomain( 'xml_mobile_sitemap', null, dirname( plugin_basename( __FILE__ ) ) . '/lang' );
 
 //Enlaces adicionales personalizados
 function xml_sitemap_mobile_enlaces($enlace, $archivo) {
@@ -47,9 +47,9 @@ function xml_sitemap_mobile_enlaces($enlace, $archivo) {
 
 	if ($archivo == $plugin) 
 	{
-		$enlace[] = '<a href="http://www.artprojectgroup.es/plugins-para-wordpress/google-mobile-sitemap-feed-with-multisite-support" target="_blank" title="Art Project Group">' . __('Visit the official plugin website', 'xml_video_sitemap') . '</a>';
-		$enlace[] = '<a href="http://www.artprojectgroup.es/como-arreglar-la-incompatibilidad-de-google-xml-sitemaps-con-nuestros-plugins" target="_blank" title="Art Project Group">' . __('<strong>Google XML Sitemaps</strong> compatibility fix', 'xml_video_sitemap') . '</a>';
-		$enlace[] = '<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=55FHSWUMLJKK2" target="_blank" title="PayPal"><img alt="Google Video Sitemap Feed With Multisite Support" src="' . __('https://www.paypalobjects.com/en_GB/i/btn/btn_donate_LG.gif', 'xml_video_sitemap') . '" width="53" height="15" style="vertical-align:text-bottom;"></a>';
+		$enlace[] = '<a href="http://www.artprojectgroup.es/plugins-para-wordpress/google-mobile-sitemap-feed-with-multisite-support" target="_blank" title="Art Project Group">' . __('Visit the official plugin website', 'xml_mobile_sitemap') . '</a>';
+		$enlace[] = '<a href="http://www.artprojectgroup.es/como-arreglar-la-incompatibilidad-de-google-xml-sitemaps-con-nuestros-plugins" target="_blank" title="Art Project Group">' . __('<strong>Google XML Sitemaps</strong> compatibility fix', 'xml_mobile_sitemap') . '</a>';
+		$enlace[] = '<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=55FHSWUMLJKK2" target="_blank" title="PayPal"><img alt="Google Mobile Sitemap Feed With Multisite Support" src="' . __('https://www.paypalobjects.com/en_GB/i/btn/btn_donate_LG.gif', 'xml_mobile_sitemap') . '" width="53" height="15" style="vertical-align:text-bottom;"></a>';
 	}
 		
 	return $enlace;
