@@ -34,7 +34,7 @@ En nuestro sitio web oficial puede obtener más información sobre [**Google Mob
 = Comentarios =
 No olvides dejarnos tu comentario en:
 
-* [Art Project Group](http://www.artprojectgroup.es/plugins-para-wordpress/google-mobile-sitemap-feed-with-multisite-support).
+* [Google Mobile Sitemap Feed With Multisite Support](http://www.artprojectgroup.es/plugins-para-wordpress/google-mobile-sitemap-feed-with-multisite-support) en Art Project Group.
 * [Art Project Group](https://www.facebook.com/artprojectgroup) en Facebook.
 * [@artprojectgroup](https://twitter.com/artprojectgroup) en Twitter.
 * [+ArtProjectGroupES](https://twitter.com/artprojectgroup) en Google+.
@@ -43,7 +43,10 @@ No olvides dejarnos tu comentario en:
 Recuerda que puedes encontrar más plugin para WordPress en [Art Project Group](http://www.artprojectgroup.es/plugins-para-wordpress/) y en nuestro perfil en [WordPress](http://profiles.wordpress.org/artprojectgroup/).
 
 == Installation ==
-1. Subir la carpeta `google-mobile-sitemap-feed-with-multisite-support` al directorio `/wp-content/plugins/`, o subir el archivo ZIP completo vía *Plugins -> Añadir nuevo -> Subir* en el Panel de Administración de tu instalación de WordPress.
+1. Puedes:
+ * Subir la carpeta `google-mobile-sitemap-feed-with-multisite-support` al directorio `/wp-content/plugins/` vía FTP. 
+ * Subir el archivo ZIP completo vía *Plugins -> Añadir nuevo -> Subir* en el Panel de Administración de tu instalación de WordPress.
+ * Buscar **Google Mobile Sitemap Feed With Multisite Support** en el buscador disponible en *Plugins -> Añadir nuevo* y pulsar el botón *Instalar ahora*.
 2. Activar el plugin a través del menú *Plugins* en el Panel de Administración de WordPress.
 3. Listo, ahora ya puedes disfrutar de él, y si te gusta y te resulta útil, hacer una [*donación*](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=55FHSWUMLJKK2).
 
@@ -62,9 +65,12 @@ Si, se han descrito errores al utilizarlo conjuntamente con el plugin **Google X
 
 == Changelog ==
 = 0.3 =
-Reparación de errores menores. 
+* Pequeños arreglos de código.
+* Pequeño arreglo de la traducción.
 = 0.2 =
-Versión inicial mejorada.
+* Pequeñas modificaciones y arreglos de código.
+* Inclusión de enlaces.
+* Actualización de los textos de información.
 = 0.1 =
 Versión inicial.
 
@@ -75,8 +81,8 @@ Pequeños arreglos de código y traducción.
 Pequeñas modificaciones y arreglos de código, inclusión de enlaces y actualización de los textos de información.
 
 ==Traducciones ==
-* English
-* Español
+* *English*: by **Art Project Group** (default language).
+* *Español*: por **Art Project Group**.
 
 == ¿Por qué está esta página en español? ==
 Mientras WordPress no nos permita a los desarrolladores realizar esta página en más de un idioma, elegiremos siempre el español.
