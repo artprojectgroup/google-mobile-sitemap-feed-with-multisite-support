@@ -7,7 +7,7 @@ class XMLSitemapMobileFeed {
 
 	function go() {		
 		global $wpdb;
-		if ( $wpdb->blogid && function_exists('get_site_option') && get_site_option('tags_blog_id') == $wpdb->blogid ) 
+		if ($wpdb->blogid && function_exists('get_site_option') && get_site_option('tags_blog_id') == $wpdb->blogid) 
 		{
 			// we are on wpmu and this is a tags blog!
 			// create NO sitemap since it will be full 
@@ -16,13 +16,13 @@ class XMLSitemapMobileFeed {
 		else 
 		{
 			// INIT
-			add_action('init', array(__CLASS__, 'init') );
+			add_action('init', array(__CLASS__, 'init'));
 	
 			// FEED
 			add_action('do_feed_sitemap-mobile', array(__CLASS__, 'load_template_sitemap_mobile'), 10, 1);
 
 			// REWRITES
-			add_filter('generate_rewrite_rules', array(__CLASS__, 'rewrite') );
+			add_filter('generate_rewrite_rules', array(__CLASS__, 'rewrite'));
 
 			//Envía el ping a Google y Bing
 			add_action('enviar_ping', array(__CLASS__, 'EnviaPing'), 10, 1);
@@ -34,12 +34,12 @@ class XMLSitemapMobileFeed {
 		}
 
 		// DE-ACTIVATION
-		register_deactivation_hook( XMLSMF_PLUGIN_DIR . '/xml-sitemap.php', array(__CLASS__, 'deactivate') );
+		register_deactivation_hook(XMLSMF_PLUGIN_DIR . '/xml-sitemap.php', array(__CLASS__, 'deactivate'));
 	}
 
 	// set up the mobile sitemap template
 	function load_template_sitemap_mobile() {
-		load_template( XMLSMF_PLUGIN_DIR . '/feed-sitemap-mobile.php' );
+		load_template(XMLSMF_PLUGIN_DIR . '/feed-sitemap-mobile.php');
 	}
 
 	// REWRITES //
@@ -51,7 +51,7 @@ class XMLSitemapMobileFeed {
 
 	// DE-ACTIVATION
 	function deactivate() {
-		remove_filter('generate_rewrite_rules', array(__CLASS__, 'rewrite') );
+		remove_filter('generate_rewrite_rules', array(__CLASS__, 'rewrite'));
 		delete_option('gn-sitemap-mobile-feed-mu-version');
 		global $wp_rewrite;
 		$wp_rewrite->flush_rules();
