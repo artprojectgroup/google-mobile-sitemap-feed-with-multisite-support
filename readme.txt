@@ -3,8 +3,8 @@ Contributors: artprojectgroup
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=55FHSWUMLJKK2
 Tags: Google, Google Mobile, Google Mobile Sitemap, sitemap, sitemap-mobile.xml
 Requires at least: 2.6
-Tested up to: 3.8
-Stable tag: 0.6
+Tested up to: 3.8.1
+Stable tag: 0.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -64,6 +64,8 @@ Si, se han descrito errores al utilizarlo conjuntamente con el plugin **Google X
 1. Captura de pantalla de sitemap-mobile.xml.
 
 == Changelog ==
+= 0.7 =
+* Añadida nueva función que limpia la base de datos al desinstalar el plugin.
 = 0.6 =
 * Arreglos menores en el código.
 = 0.5 =
@@ -81,6 +83,8 @@ Si, se han descrito errores al utilizarlo conjuntamente con el plugin **Google X
 * Versión inicial.
 
 == Upgrade Notice ==
+= 0.7 =
+* Añadida nueva función que limpia la base de datos al desinstalar el plugin.
 = 0.6 =
 * Arreglos menores en el código.
 = 0.5 =
