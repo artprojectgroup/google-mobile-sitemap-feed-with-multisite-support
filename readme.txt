@@ -1,16 +1,18 @@
 === Google Mobile Sitemap Feed With Multisite Support ===
 Contributors: artprojectgroup 
-Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=55FHSWUMLJKK2
+Donate link: http://www.artprojectgroup.es/donacion
 Tags: Google, Google Mobile, Google Mobile Sitemap, sitemap, sitemap-mobile.xml
 Requires at least: 2.6
 Tested up to: 3.8.1
-Stable tag: 0.7
+Stable tag: 0.7.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Genera dinámicamente el archivo sitemap-mobile.xml, un mapa de sitio para móviles de Google. No requiere ningún tipo de configuración.
 
 == Description ==
+[*Español*](http://wordpress.org/plugins/google-mobile-sitemap-feed-with-multisite-support/) - [*English*](http://goo.gl/0pQF38) - [*Italiano*](http://goo.gl/pmIWMQ) - [*Français*](http://goo.gl/PtxgBz) - [*Deutsch*](http://goo.gl/zYdpKI) 
+
 **Google Mobile Sitemap Feed With Multisite Support** genera dinámicamente un mapa de sitio para móviles de Google creando un archivo `sitemap-mobile.xml ` virtual. 
 
 = Características =
@@ -48,7 +50,7 @@ Recuerda que puedes encontrar más plugin para WordPress en [Art Project Group](
  * Subir el archivo ZIP completo vía *Plugins -> Añadir nuevo -> Subir* en el Panel de Administración de tu instalación de WordPress.
  * Buscar **Google Mobile Sitemap Feed With Multisite Support** en el buscador disponible en *Plugins -> Añadir nuevo* y pulsar el botón *Instalar ahora*.
 2. Activar el plugin a través del menú *Plugins* en el Panel de Administración de WordPress.
-3. Listo, ahora ya puedes disfrutar de él, y si te gusta y te resulta útil, hacer una [*donación*](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=55FHSWUMLJKK2).
+3. Listo, ahora ya puedes disfrutar de él, y si te gusta y te resulta útil, hacer una [*donación*](http://www.artprojectgroup.es/donacion).
 
 == Frequently Asked Questions ==
 = ¿Necesita configuración? =
@@ -64,6 +66,8 @@ Si, se han descrito errores al utilizarlo conjuntamente con el plugin **Google X
 1. Captura de pantalla de sitemap-mobile.xml.
 
 == Changelog ==
+= 0.7.1 =
+* Cambio del enlace de donación.
 = 0.7 =
 * Añadida nueva función que limpia la base de datos al desinstalar el plugin.
 = 0.6 =
@@ -83,6 +87,8 @@ Si, se han descrito errores al utilizarlo conjuntamente con el plugin **Google X
 * Versión inicial.
 
 == Upgrade Notice ==
+= 0.7.1 =
+* Cambio del enlace de donación.
 = 0.7 =
 * Añadida nueva función que limpia la base de datos al desinstalar el plugin.
 = 0.6 =
@@ -113,7 +119,7 @@ Por ello regalamos a esa gran comunidad hispana nuestros plugins con interfaces,
 Esperamos que os guste nuestra iniciativa.
 
 == Donación ==
-¿Te ha gustado y te ha resultado útil **Google Mobile Sitemap Feed With Multisite Support** en tu sitio web? Te agradeceríamos una [pequeña donación](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=55FHSWUMLJKK2) que nos ayudará a seguir mejorando este plugin y a crear más plugins totalmente gratuitos para toda la comunidad WordPress.
+¿Te ha gustado y te ha resultado útil **Google Mobile Sitemap Feed With Multisite Support** en tu sitio web? Te agradeceríamos una [pequeña donación](http://www.artprojectgroup.es/donacion) que nos ayudará a seguir mejorando este plugin y a crear más plugins totalmente gratuitos para toda la comunidad WordPress.
 
 == Gracias ==
 * A [Tim Brandon](http://profiles.wordpress.org/users/timbrd/) y [Amit Agarwal](http://profiles.wordpress.org/labnol/) por sus grandes plugins que han inspirado **Google Video Sitemap Feed With Multisite Support**.

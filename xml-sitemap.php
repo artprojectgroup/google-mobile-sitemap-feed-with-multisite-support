@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Google Mobile Sitemap Feed With Multisite Support
-Version: 0.7
+Version: 0.7.1
 Plugin URI: http://wordpress.org/plugins/google-mobile-sitemap-feed-with-multisite-support/
 Description: Dynamically generates a Google Mobile Sitemap and automatically submit updates to Google and Bing. No settings required. Compatible with WordPress Multisite installations. Created from <a href="http://profiles.wordpress.org/users/timbrd/" target="_blank">Tim Brandon</a> <a href="http://wordpress.org/plugins/google-news-sitemap-feed-with-multisite-support/" target="_blank"><strong>Google News Sitemap Feed With Multisite Support</strong></a> and <a href="http://profiles.wordpress.org/labnol/" target="_blank">Amit Agarwal</a> <a href="http://wordpress.org/plugins/google-mobile-sitemap/" target="_blank"><strong>Google XML Sitemap for Mobile</strong></a> plugins.
 Author: Art Project Group
@@ -41,10 +41,10 @@ License: GPL2
 //Definimos las variables
 $xml_mobile_sitemap = array(	'plugin' => 'Google Mobile Sitemap Feed With Multisite Support', 
 								'plugin_uri' => 'google-mobile-sitemap-feed-with-multisite-support', 
+								'donacion' => 'http://www.artprojectgroup.es/donacion',
 								'plugin_url' => 'http://www.artprojectgroup.es/plugins-para-wordpress/google-mobile-sitemap-feed-with-multisite-support', 
 								'paypal' => 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=55FHSWUMLJKK2', 
 								'ajustes' => '', 
-								'imagen' => '', 
 								'puntuacion' => 'http://wordpress.org/support/view/plugin-reviews/google-mobile-sitemap-feed-with-multisite-support');
 
 //Carga el idioma
@@ -60,7 +60,7 @@ function xml_sitemap_mobile_enlaces($enlaces, $archivo) {
 	{
 		$plugin = xml_mobile_sitemap_plugin($xml_mobile_sitemap['plugin_uri']);
 		$enlaces[] = '<a href="http://www.artprojectgroup.es/como-arreglar-la-incompatibilidad-de-google-xml-sitemaps-con-nuestros-plugins" target="_blank" title="Art Project Group">' . __('<strong>Google XML Sitemaps</strong> compatibility fix', 'xml_mobile_sitemap') . '</a>';
-		$enlaces[] = '<a href="' . $xml_mobile_sitemap['paypal'] . '" target="_blank" title="' . __('Make a donation by ', 'xml_mobile_sitemap') . 'PayPal"><span class="icon-paypal"></span></a>';
+		$enlaces[] = '<a href="' . $xml_mobile_sitemap['donacion'] . '" target="_blank" title="' . __('Make a donation by ', 'xml_mobile_sitemap') . 'PayPal"><span class="icon-bills"></span></a>';
 		$enlaces[] = '<a href="'. $xml_mobile_sitemap['plugin_url'] . '" target="_blank" title="' . $xml_mobile_sitemap['plugin'] . '"><strong class="artprojectgroup">APG</strong></a>';
 		$enlaces[] = '<a href="https://www.facebook.com/artprojectgroup" title="' . __('Follow us on ', 'xml_mobile_sitemap') . 'Facebook" target="_blank"><span class="icon-facebook6"></span></a> <a href="https://twitter.com/artprojectgroup" title="' . __('Follow us on ', 'xml_mobile_sitemap') . 'Twitter" target="_blank"><span class="icon-social19"></span></a> <a href="https://plus.google.com/+ArtProjectGroupES" title="' . __('Follow us on ', 'xml_mobile_sitemap') . 'Google+" target="_blank"><span class="icon-google16"></span></a> <a href="http://es.linkedin.com/in/artprojectgroup" title="' . __('Follow us on ', 'xml_mobile_sitemap') . 'LinkedIn" target="_blank"><span class="icon-logo"></span></a>';
 		$enlaces[] = '<a href="http://profiles.wordpress.org/artprojectgroup/" title="' . __('More plugins on ', 'xml_mobile_sitemap') . 'WordPress" target="_blank"><span class="icon-wordpress2"></span></a>';
