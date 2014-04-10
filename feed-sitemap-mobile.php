@@ -13,7 +13,12 @@ echo '<?xml version="1.0" encoding="' . get_bloginfo('charset') . '"?>
 <!-- generated-on="' . date('Y-m-d\TH:i:s+00:00') . '" -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0">' . PHP_EOL;
 
-$entradas = $wpdb->get_results ("SELECT id, post_modified_gmt FROM $wpdb->posts WHERE post_status = 'publish' AND (post_type = 'post' OR post_type = 'page') ORDER BY post_date"); //Consulta
+$entradas = get_transient('xml_sitemap_mobile');
+if ($entradas === false) 
+{
+     $entradas = $wpdb->get_results("SELECT id, post_modified_gmt FROM $wpdb->posts WHERE post_status = 'publish' AND (post_type = 'post' OR post_type = 'page') ORDER BY post_date"); //Consulta
+     set_transient('xml_sitemap_mobile', $entradas, 30 * DAY_IN_SECONDS);
+}
 	
 global $wp_query;
 $wp_query->is_404 = false;	// force is_404() condition to false when on site without posts

@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Google Mobile Sitemap Feed With Multisite Support
-Version: 0.7.1
+Version: 0.8
 Plugin URI: http://wordpress.org/plugins/google-mobile-sitemap-feed-with-multisite-support/
 Description: Dynamically generates a Google Mobile Sitemap and automatically submit updates to Google and Bing. No settings required. Compatible with WordPress Multisite installations. Created from <a href="http://profiles.wordpress.org/users/timbrd/" target="_blank">Tim Brandon</a> <a href="http://wordpress.org/plugins/google-news-sitemap-feed-with-multisite-support/" target="_blank"><strong>Google News Sitemap Feed With Multisite Support</strong></a> and <a href="http://profiles.wordpress.org/labnol/" target="_blank">Amit Agarwal</a> <a href="http://wordpress.org/plugins/google-mobile-sitemap/" target="_blank"><strong>Google XML Sitemap for Mobile</strong></a> plugins.
 Author: Art Project Group
@@ -73,7 +73,7 @@ function xml_sitemap_mobile_enlaces($enlaces, $archivo) {
 add_filter('plugin_row_meta', 'xml_sitemap_mobile_enlaces', 10, 2);
 
 //Constantes
-define('XMLSMF_VERSION', '0.7');
+define('XMLSMF_VERSION', '0.8');
 define('XMLSMF_MEMORY_LIMIT', '128M');
 
 if (file_exists(dirname(__FILE__).'/google-mobile-sitemap-feed-mu')) define('XMLSMF_PLUGIN_DIR', dirname(__FILE__) . '/google-mobile-sitemap-feed-mu');
@@ -86,11 +86,16 @@ if(class_exists('XMLSitemapMobileFeed') || include(XMLSMF_PLUGIN_DIR . '/XMLSite
 function xml_mobile_sitemap_plugin($nombre) {
 	$argumentos = (object) array('slug' => $nombre);
 	$consulta = array('action' => 'plugin_information', 'timeout' => 15, 'request' => serialize($argumentos));
-	$url = 'http://api.wordpress.org/plugins/info/1.0/';
-	$respuesta = wp_remote_post($url, array('body' => $consulta));
-	$plugin = unserialize($respuesta['body']);
+	$respuesta = get_transient('xml_video_sitemap_plugin');
+	if (false === $respuesta) 
+	{
+		$respuesta = wp_remote_post('http://api.wordpress.org/plugins/info/1.0/', array('body' => $consulta));
+		set_transient('xml_video_sitemap_plugin', $respuesta, 24 * HOUR_IN_SECONDS);
+	}
+	if (!is_wp_error($respuesta)) $plugin = get_object_vars(unserialize($respuesta['body']));
+	else $plugin['rating'] = 100;
 	
-	return get_object_vars($plugin);
+	return $plugin;
 }
 
 //Carga las hojas de estilo
@@ -102,6 +107,7 @@ add_action('admin_init', 'xml_mobile_sitemap_carga_css');
 
 //Eliminamos todo rastro del plugin al desinstalarlo
 function xml_mobile_sitemap_desinstalar() {
-  delete_option('gn-sitemap-mobile-feed-mu-version');
+	delete_option('gn-sitemap-mobile-feed-mu-version');
+	delete_transient('xml_sitemap_mobile');
 }
-register_deactivation_hook( __FILE__, 'xml_mobile_sitemap_desinstalar' );
+register_uninstall_hook( __FILE__, 'xml_mobile_sitemap_desinstalar' );

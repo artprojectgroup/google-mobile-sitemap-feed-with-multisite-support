@@ -3,8 +3,8 @@ Contributors: artprojectgroup
 Donate link: http://www.artprojectgroup.es/donacion
 Tags: Google, Google Mobile, Google Mobile Sitemap, sitemap, sitemap-mobile.xml
 Requires at least: 2.6
-Tested up to: 3.8.1
-Stable tag: 0.7.1
+Tested up to: 3.8.2
+Stable tag: 0.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -66,6 +66,10 @@ Si, se han descrito errores al utilizarlo conjuntamente con el plugin **Google X
 1. Captura de pantalla de sitemap-mobile.xml.
 
 == Changelog ==
+= 0.8 =
+* Arreglo de error que borraba toda la configuración al desactivar el plugin.
+* Corrección menor que evita la aparición de un código de error al recopilar información sobre el plugin.
+* Uso de la API Transients de WordPress para mejorar las consultas.
 = 0.7.1 =
 * Cambio del enlace de donación.
 = 0.7 =
@@ -87,6 +91,10 @@ Si, se han descrito errores al utilizarlo conjuntamente con el plugin **Google X
 * Versión inicial.
 
 == Upgrade Notice ==
+= 0.8 =
+* Arreglo de error que borraba toda la configuración al desactivar el plugin.
+* Corrección menor que evita la aparición de un código de error al recopilar información sobre el plugin.
+* Uso de la API Transients de WordPress para mejorar las consultas.
 = 0.7.1 =
 * Cambio del enlace de donación.
 = 0.7 =
