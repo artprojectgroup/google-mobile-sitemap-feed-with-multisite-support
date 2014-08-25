@@ -5,7 +5,7 @@
 
 class XMLSitemapMobileFeed {
 
-	function go() {		
+	public static function go() {		
 		global $wpdb;
 		if ($wpdb->blogid && function_exists('get_site_option') && get_site_option('tags_blog_id') == $wpdb->blogid) 
 		{
@@ -38,19 +38,19 @@ class XMLSitemapMobileFeed {
 	}
 
 	// set up the mobile sitemap template
-	function load_template_sitemap_mobile() {
+	public static function load_template_sitemap_mobile() {
 		load_template(XMLSMF_PLUGIN_DIR . '/feed-sitemap-mobile.php');
 	}
 
 	// REWRITES //
 	// add sitemap rewrite rules
-	function rewrite($wp_rewrite) {
+	public static function rewrite($wp_rewrite) {
 		$feed_rules = array('sitemap-mobile.xml$' => $wp_rewrite->index . '?feed=sitemap-mobile',);
 		$wp_rewrite->rules = $feed_rules + $wp_rewrite->rules;
 	}
 
 	// DE-ACTIVATION
-	function deactivate() {
+	public static function deactivate() {
 		remove_filter('generate_rewrite_rules', array(__CLASS__, 'rewrite'));
 		delete_option('gn-sitemap-mobile-feed-mu-version');
 		global $wp_rewrite;
@@ -60,7 +60,7 @@ class XMLSitemapMobileFeed {
 	// MULTI-LANGUAGE PLUGIN FILTERS
 
 	// qTranslate
-	function qtranslate($input) {
+	public static function qtranslate($input) {
 		global $q_config;
 
 		if (is_array($input)) // got an array? return one!
@@ -76,7 +76,7 @@ class XMLSitemapMobileFeed {
 	}
 
 	// xLanguage
-	function xlanguage($input) {
+	public static function xlanguage($input) {
 		global $xlanguage;
 	
 		if (is_array($input)) // got an array? return one!
@@ -91,7 +91,7 @@ class XMLSitemapMobileFeed {
 		return $return;
 	}
 
-	function init() {
+	public static function init() {
 		// FLUSH RULES after (site wide) plugin upgrade
 		if (get_option('gn-sitemap-mobile-feed-mu-version') != XMLSMF_VERSION) 
 		{
