@@ -4,7 +4,7 @@ Donate link: http://www.artprojectgroup.es/tienda/donacion
 Tags: Google, Google Mobile, Google Mobile Sitemap, sitemap, sitemap-mobile.xml
 Requires at least: 2.6
 Tested up to: 4.0
-Stable tag: 0.9
+Stable tag: 0.9.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -66,6 +66,8 @@ Si, se han descrito errores al utilizarlo conjuntamente con el plugin **Google X
 1. Captura de pantalla de sitemap-mobile.xml.
 
 == Changelog ==
+= 0.9.1 =
+* Añadido borrado de caché al publicar nuevo contenido.
 = 0.9 =
 * Arreglo de error que provocaba un mensaje de error en versiones superiores a la 5.2 de PHP.
 = 0.8 =
@@ -93,6 +95,8 @@ Si, se han descrito errores al utilizarlo conjuntamente con el plugin **Google X
 * Versión inicial.
 
 == Upgrade Notice ==
+= 0.9.1 =
+* Añadido borrado de caché al publicar nuevo contenido.
 = 0.9 =
 * Arreglo de error que provocaba un mensaje de error en versiones superiores a la 5.2 de PHP.
 = 0.8 =

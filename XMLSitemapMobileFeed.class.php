@@ -109,6 +109,7 @@ class XMLSitemapMobileFeed {
 
 	//Programa el ping a los buscadores web
 	public static function ProgramaPing() {
+		delete_transient('xml_sitemap_mobile');
 		wp_schedule_single_event(time(),'enviar_ping');
 	}
 
