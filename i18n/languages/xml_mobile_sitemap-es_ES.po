@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Google Mobile Sitemap Feed With Multisite Support v0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: Sun Aug 09 2015 13:57:30 GMT+0200 (CEST)\n"
+"PO-Revision-Date: Sun Aug 09 2015 16:11:26 GMT+0200 (CEST)\n"
 "Last-Translator: Art Project Group <info@artprojectgroup.com>\n"
 "Language-Team: \n"
 "Language: Spanish (Spain)\n"
@@ -43,7 +43,15 @@ msgstr "Más plugins en "
 msgid "Contact with us by "
 msgstr "Contacta con nosotros por "
 
-#: ../../xml-sitemap.php:126
+#: ../../xml-sitemap.php:81
+msgid "Support of "
+msgstr "Soporte técnico de "
+
+#: ../../xml-sitemap.php:81
+msgid "Support"
+msgstr "Soporte técnico"
+
+#: ../../xml-sitemap.php:142
 #, php-format
 msgid "Please, rate %s:"
 msgstr "Por favor, puntúa %s:"

@@ -73,6 +73,22 @@ function xml_mobile_sitemap_enlaces( $enlaces, $archivo ) {
 }
 add_filter( 'plugin_row_meta', 'xml_mobile_sitemap_enlaces', 10, 2 );
 
+//Añade el botón de configuración
+function xml_mobile_sitemap_enlace_de_ajustes( $enlaces ) { 
+	global $xml_mobile_sitemap;
+
+	$enlaces_de_ajustes = array(
+		'<a href="' . $xml_mobile_sitemap['soporte'] . '" title="' . __( 'Support of ', 'xml_mobile_sitemap' ) . $xml_mobile_sitemap['plugin'] .'">' . __( 'Support', 'apg_shipping' ) . '</a>'
+	);
+	foreach( $enlaces_de_ajustes as $enlace_de_ajustes )	{
+		array_unshift( $enlaces, $enlace_de_ajustes );
+	}
+	
+	return $enlaces; 
+}
+$plugin = DIRECCION_xml_mobile_sitemap; 
+add_filter( "plugin_action_links_$plugin", 'xml_mobile_sitemap_enlace_de_ajustes' );
+
 //Constantes
 define( 'XMLSMF_VERSION', '1.0' );
 define( 'XMLSMF_MEMORY_LIMIT', '128M' );
