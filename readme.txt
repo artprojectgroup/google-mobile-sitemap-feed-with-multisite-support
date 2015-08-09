@@ -3,10 +3,10 @@ Contributors: artprojectgroup
 Donate link: http://www.artprojectgroup.es/tienda/donacion
 Tags: Google, Google Mobile, Google Mobile Sitemap, sitemap, sitemap-mobile.xml
 Requires at least: 2.6
-Tested up to: 4.0
-Stable tag: 0.9.1
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tested up to: 4.3
+Stable tag: 1.0
+License: GPLv3
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 Genera dinámicamente el archivo sitemap-mobile.xml, un mapa de sitio para móviles de Google. No requiere ningún tipo de configuración.
 
@@ -66,6 +66,8 @@ Si, se han descrito errores al utilizarlo conjuntamente con el plugin **Google X
 1. Captura de pantalla de sitemap-mobile.xml.
 
 == Changelog ==
+= 1.0 =
+* Modificación de la estructura interna del plugin para ajustarse a los estándares de WordPress.
 = 0.9.1 =
 * Añadido borrado de caché al publicar nuevo contenido.
 = 0.9 =
@@ -95,6 +97,8 @@ Si, se han descrito errores al utilizarlo conjuntamente con el plugin **Google X
 * Versión inicial.
 
 == Upgrade Notice ==
+= 1.0 =
+* Modificación de la estructura interna del plugin para ajustarse a los estándares de WordPress.
 = 0.9.1 =
 * Añadido borrado de caché al publicar nuevo contenido.
 = 0.9 =
