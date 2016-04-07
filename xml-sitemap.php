@@ -7,7 +7,7 @@ Description: Dynamically generates a Google Mobile Sitemap and automatically sub
 Author URI: http://www.artprojectgroup.es/
 Author: Art Project Group
 Requires at least: 2.6
-Tested up to: 4.4.2
+Tested up to: 4.5
 
 Text Domain: xml_mobile_sitemap
 Domain Path: /i18n/languages
