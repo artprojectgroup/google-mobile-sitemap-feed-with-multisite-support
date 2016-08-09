@@ -7,7 +7,7 @@ Tags: Google, Google Mobile, Google Mobile Sitemap, sitemap, sitemap-mobile.xml
 
 Requires at least: 2.6
 
-Tested up to: 4.5
+Tested up to: 4.6
 
 Stable tag: 1.0.1.1
 
